@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js"></script>
+
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+        <title>Calculadora de Juros</title>
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <h1 class="titleBody">Calculadora de Juros</h1>
+                <p class="subtitleBody">Calcule seus juros simples online!</p>
+                <hr>
+
+                <label for="capital" class="capitalLabel"><b>Capital:</b></label>
+                <input type="text" placeholder="Digite o valor da capital..." name="capital" id="capital" class="capital" required>
+
+                <label for="taxa" class="taxaLabel"><b>Taxa:</b></label>
+                <input type="text" placeholder="Digite a taxa..." name="taxa" id="taxa" class="taxa" required>
+
+                <label for="meses" class="mesesLabel"><b>Meses:</b></label>
+                <input type="text" placeholder="Digite a quantidade de meses..." name="meses" id="meses" class="meses" required>
+                <hr>
+
+                <button type="submit" class="calcBtn" onclick="calcular()">Calcular</button>
+
+                <hr>
+
+                <h3>Resultado:</h3>
+                
+                <input type="text" readonly id="resultado" class="resultBox">
+            </div>
+        </form>
+    </body>
+</html>

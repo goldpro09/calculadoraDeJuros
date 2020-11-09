@@ -1,0 +1,36 @@
+<html>
+ <head>
+     <link rel="stylesheet" href="loadingstyle.css">
+ </head>
+ <body>
+     <script>
+        var linkIndex = document.querySelector('#a link')
+        function gotoIndex(){
+            window.location.replace("index.html");
+        }
+        setTimeout(gotoIndex, 5000)
+     </script>
+    <div class="container">
+        <div class="loading">
+          <div class="loading__letter">C</div>
+          <div class="loading__letter">a</div>
+          <div class="loading__letter">r</div>
+          <div class="loading__letter">r</div>
+          <div class="loading__letter">e</div>
+          <div class="loading__letter">g</div>
+          <div class="loading__letter">a</div>
+          <div class="loading__letter">n</div>
+          <div class="loading__letter">d</div>
+          <div class="loading__letter">o</div>
+          <div class="loading__letter">.</div>
+          <div class="loading__letter">.</div>
+          <div class="loading__letter">.</div>
+        </div>
+      </div>
+
+    <link rel="import" href="index.html">
+    <div id="a">
+        <a href="index.html" id="link"></a>
+    </div>
+ </body>
+</html>
